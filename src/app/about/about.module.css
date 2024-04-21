@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ImageContainer {
+  flex: 1;
+  position: relative;
+}
+
+.title {
+  color: var(--btn);
+  font-size: 24px;
+}
+.subtitle {
+}
+.desc {
+}
+
+.boxes {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box h1 {
+  color: var(--btn);
+  font-size: 24px;
+}
+.box p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.aboutImage {
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: vertical;
+  }
+  .ImageContainer {
+    display: none;
+  }
+  .textContainer {
+    text-align: center;
+  }
+}

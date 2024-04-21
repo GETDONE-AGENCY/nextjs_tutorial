@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.imageContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+.contactimage {
+  object-fit: contain;
+}
+.formContainer {
+  flex: 1;
+}
+
+.form {
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input,
+.form textarea {
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--btnSoft);
+  color: var(--text);
+}
+
+.button{
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--btn);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: vertical;
+  }
+  .imageContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,2 @@
+Cmd K Cm W = Close All Tabs
+Cmd Shift P = Search Settings
